@@ -1,0 +1,26 @@
+Proprietary License
+
+Copyright (c) 2026 [Your Name or Company Name Here]. All rights reserved.
+
+This repository contains product documentation only. No source code,
+object code, or other implementation of the AuthNest platform is
+included here.
+
+Permission is NOT granted to any person to copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the documentation contained
+in this repository, or of the AuthNest platform or any of its components,
+without prior written permission from the copyright holder.
+
+The AuthNest name, product, underlying source code, and related
+materials are proprietary and confidential. Access to the private
+engineering repository, source code, or additional technical
+documentation is granted only to qualified partners and investors under
+a separate, signed non-disclosure agreement (NDA).
+
+The AuthNest React SDK and AuthNest Server SDK are distributed
+separately as independent packages under their own license terms, which
+may differ from this license. See those packages' own licensing
+information for details.
+
+For licensing inquiries, partnership, or investment discussions, contact:
+[Add contact email here]
