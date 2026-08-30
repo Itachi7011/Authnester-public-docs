@@ -68,28 +68,28 @@ _[Add links to the SDK packages/docs here once ready to share.]_
 ## 🏗️ Architecture (high level)
 
 ```
-                     ┌───────────────────────┐
-   Browser ─────────▶│    Web Dashboard         │
+                     ┌──────────────────────────┐
+   Browser ────────▶│    Web Dashboard         │
                      │  (Public site, User/     │
-                     │   Client/Admin portals)   │
-                     └───────────┬─────────────┘
+                     │   Client/Admin portals)  │
+                     └───────────┬──────────────┘
                                  │
                                  ▼
-                     ┌───────────────────────┐
-                     │   Authentication API      │
-                     │  Signup/login, OTP,       │
-                     │  OAuth, MFA, sessions,    │
-                     │  per-Client API keys,     │
-                     │  realtime updates          │
-                     └──────────┬────────────────┘
+                     ┌──────────────────────────┐
+                     │   Authentication API     │
+                     │  Signup/login, OTP,      │
+                     │  OAuth, MFA, sessions,   │
+                     │  per-Client API keys,    │
+                     │  realtime updates        │
+                     └──────────┬───────────────┘
                                 │
-                    ┌───────────┴────────────┐
+                    ┌───────────┴─────────────┐
                     ▼                         ▼
-          ┌──────────────────┐     ┌────────────────────┐
-          │      Database        │     │   Async Job Queue     │
-          │  (users, Clients,     │     │  (email, audit,        │
-          │   sessions, keys)     │     │   metrics workers)      │
-          └──────────────────┘     └────────────────────┘
+          ┌───────────────────┐     ┌───────────────────────┐
+          │      Database     │     │   Async Job Queue     │
+          │  (users, Clients, │     │  (email, audit,       │
+          │   sessions, keys) │     │   metrics workers)    │
+          └───────────────────┘     └───────────────────────┘
 ```
 
 Integrating apps talk to AuthNest through the API (directly, or via one
